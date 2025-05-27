@@ -39,12 +39,16 @@ if 0 <=  user_choice <= 2:
     computer_choice = random.randint(0, 2)
     print(images[computer_choice])
 
-    if (user_choice == 0 and computer_choice == 2) or (user_choice > computer_choice):
+    if user_choice == 0 and computer_choice == 2:
         print("You Win!")
-    elif (user_choice == 2 and computer_choice == 0) or (user_choice < computer_choice):
-        print("You Loose")
+    elif user_choice == 2 and computer_choice == 0:
+        print("You Lose!")
+    elif user_choice > computer_choice:
+        print("You Win!")
+    elif computer_choice > user_choice:
+        print("You Lose!")
     else:
-        print("Draw")
+        print("Draw.")
 
 else:
     print("Please choose among 0, 1 and 2")
