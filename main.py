@@ -51,7 +51,7 @@ if 0 <=  user_choice <= 2:
         print("Draw.")
 
 else:
-    print("Please choose among 0, 1 and 2")
+    print("Invalid input. Choose 0, 1 or 2")
 
 
 
